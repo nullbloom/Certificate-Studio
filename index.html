@@ -1,0 +1,1375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Certificate Studio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="app">
+
+    <!-- ================= SIDEBAR ================= -->
+
+    <aside class="sidebar">
+
+        <div class="brand">
+
+            <div class="brand-icon">CS</div>
+
+            <div>
+                <h2>Certificate</h2>
+                <span>Studio</span>
+            </div>
+
+        </div>
+
+
+        <nav class="sidebar-nav">
+
+            <p class="nav-title">MAIN</p>
+
+            <button class="nav-item active" id="dashboardNav">
+                <span>⌂</span>
+                Dashboard
+            </button>
+
+            <button class="nav-item" id="createNav">
+                <span>＋</span>
+                Create Certificate
+            </button>
+
+            <button class="nav-item" id="templatesNav">
+                <span>▦</span>
+                Templates
+            </button>
+
+            <button class="nav-item" id="certificatesNav">
+                <span>▤</span>
+                My Certificates
+            </button>
+
+
+            <p class="nav-title">SYSTEM</p>
+
+            <button class="nav-item" id="settingsNav">
+                <span>⚙</span>
+                Settings
+            </button>
+
+            <button class="nav-item" id="helpNav">
+                <span>?</span>
+                Help
+            </button>
+
+        </nav>
+
+
+        <div class="help-card">
+
+            <div class="help-icon">✦</div>
+
+            <h3>Create something great</h3>
+
+            <p>
+                Design professional certificates
+                in just a few clicks.
+            </p>
+
+            <button id="helpButton">
+                Learn More →
+            </button>
+
+        </div>
+
+
+        <div class="profile">
+
+            <div class="profile-avatar">
+                NG
+            </div>
+
+            <div class="profile-info">
+
+                <strong>Namrata Gogade</strong>
+
+                <span>
+                    Student Designer
+                </span>
+
+            </div>
+
+            <span class="profile-more">
+                •••
+            </span>
+
+        </div>
+
+    </aside>
+
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main class="main">
+
+
+        <!-- ================= DASHBOARD ================= -->
+
+        <section id="dashboardScreen">
+
+            <header class="topbar">
+
+                <div>
+
+                    <p class="welcome-small">
+                        Welcome back 👋
+                    </p>
+
+                    <h1>
+                        Good Morning, Namrata
+                    </h1>
+
+                    <p class="top-description">
+                        Create beautiful certificates effortlessly.
+                    </p>
+
+                </div>
+
+
+                <button class="primary-btn" id="createButton">
+
+                    <span>＋</span>
+
+                    Create Certificate
+
+                </button>
+
+            </header>
+
+
+
+            <!-- ================= STATS ================= -->
+
+            <section class="stats-grid">
+
+                <div class="stat-card">
+
+                    <div class="stat-icon purple">
+                        ✦
+                    </div>
+
+                    <div>
+
+                        <span>
+                            Total Certificates
+                        </span>
+
+                        <h2 id="totalCertificates">
+                            0
+                        </h2>
+
+                    </div>
+
+                    <small id="totalTrend">
+                        Create your first
+                    </small>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon blue">
+                        ✓
+                    </div>
+
+                    <div>
+
+                        <span>
+                            Generated
+                        </span>
+
+                        <h2 id="generatedCertificates">
+                            0
+                        </h2>
+
+                    </div>
+
+                    <small>
+                        Created in browser
+                    </small>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon green">
+                        ◉
+                    </div>
+
+                    <div>
+
+                        <span>
+                            Verified
+                        </span>
+
+                        <h2 id="verifiedCertificates">
+                            0
+                        </h2>
+
+                    </div>
+
+                    <small>
+                        Demo verification
+                    </small>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon orange">
+                        ▦
+                    </div>
+
+                    <div>
+
+                        <span>
+                            Templates
+                        </span>
+
+                        <h2>
+                            3
+                        </h2>
+
+                    </div>
+
+                    <small>
+                        3 styles
+                    </small>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- ================= QUICK CREATE ================= -->
+
+            <section class="section">
+
+                <div class="section-header">
+
+                    <div>
+
+                        <h2>
+                            Quick Create
+                        </h2>
+
+                        <p>
+                            Start with a professional template.
+                        </p>
+
+                    </div>
+
+                    <button
+                        class="text-btn"
+                        id="viewTemplatesBtn">
+
+                        View all →
+
+                    </button>
+
+                </div>
+
+
+                <div class="template-grid">
+
+
+                    <!-- CLASSIC -->
+
+                    <div
+                        class="template-card"
+                        data-template="classic">
+
+                        <div class="template-preview classic-mini">
+
+                            <div class="mini-border">
+
+                                <span>
+                                    CERTIFICATE
+                                </span>
+
+                                <strong>
+                                    OF ACHIEVEMENT
+                                </strong>
+
+                                <small>
+                                    This certificate is proudly presented to
+                                </small>
+
+                                <b>
+                                    Your Name
+                                </b>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="template-card-info">
+
+                            <div>
+
+                                <h3>
+                                    Classic
+                                </h3>
+
+                                <p>
+                                    Professional & timeless
+                                </p>
+
+                            </div>
+
+                            <span class="arrow">
+                                →
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- MODERN -->
+
+                    <div
+                        class="template-card"
+                        data-template="modern">
+
+                        <div class="template-preview modern-mini">
+
+                            <div class="modern-shape"></div>
+
+                            <span>
+                                CERTIFICATE
+                            </span>
+
+                            <strong>
+                                OF ACHIEVEMENT
+                            </strong>
+
+                            <b>
+                                Your Name
+                            </b>
+
+                        </div>
+
+
+                        <div class="template-card-info">
+
+                            <div>
+
+                                <h3>
+                                    Modern
+                                </h3>
+
+                                <p>
+                                    Clean & contemporary
+                                </p>
+
+                            </div>
+
+                            <span class="arrow">
+                                →
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- ELEGANT -->
+
+                    <div
+                        class="template-card"
+                        data-template="elegant">
+
+                        <div class="template-preview elegant-mini">
+
+                            <div class="elegant-inner">
+
+                                <span>
+                                    Certificate
+                                </span>
+
+                                <strong>
+                                    OF ACHIEVEMENT
+                                </strong>
+
+                                <b>
+                                    Your Name
+                                </b>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="template-card-info">
+
+                            <div>
+
+                                <h3>
+                                    Elegant
+                                </h3>
+
+                                <p>
+                                    Premium & sophisticated
+                                </p>
+
+                            </div>
+
+                            <span class="arrow">
+                                →
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- ================= RECENT ================= -->
+
+            <section class="section recent-section">
+
+                <div class="section-header">
+
+                    <div>
+
+                        <h2>
+                            Recent Certificates
+                        </h2>
+
+                        <p>
+                            Your latest certificate activity.
+                        </p>
+
+                    </div>
+
+                    <button
+                        class="text-btn"
+                        id="clearCertificatesBtn">
+
+                        Clear all →
+
+                    </button>
+
+                </div>
+
+
+                <div class="table-container">
+
+                    <table>
+
+                        <thead>
+
+                            <tr>
+
+                                <th>
+                                    Certificate
+                                </th>
+
+                                <th>
+                                    Recipient
+                                </th>
+
+                                <th>
+                                    Date
+                                </th>
+
+                                <th>
+                                    Status
+                                </th>
+
+                                <th></th>
+
+                            </tr>
+
+                        </thead>
+
+
+                        <tbody id="recentBody"></tbody>
+
+                    </table>
+
+
+                    <div
+                        id="emptyRecent"
+                        class="empty-state">
+
+                        No certificates yet.
+                        Create your first one.
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </section>
+
+
+
+        <!-- ================================================= -->
+        <!-- CERTIFICATE CREATOR -->
+        <!-- ================================================= -->
+
+        <section
+            id="creatorScreen"
+            class="creator-screen hidden">
+
+
+            <header class="creator-header">
+
+                <div>
+
+                    <button
+                        id="backButton"
+                        class="back-btn">
+
+                        ← Back
+
+                    </button>
+
+                    <h1>
+                        Create Certificate
+                    </h1>
+
+                    <p>
+                        Customize your certificate and
+                        see changes instantly.
+                    </p>
+
+                </div>
+
+
+                <div class="creator-actions">
+
+                    <button
+                        class="secondary-btn"
+                        id="saveButton">
+
+                        Save Draft
+
+                    </button>
+
+                    <button
+                        class="primary-btn"
+                        id="generateButton">
+
+                        Generate Certificate
+
+                    </button>
+
+                </div>
+
+            </header>
+
+
+
+            <div class="creator-layout">
+
+
+                <!-- ================= EDITOR ================= -->
+
+                <div class="editor-panel">
+
+
+                    <!-- DETAILS -->
+
+                    <div class="editor-section">
+
+                        <div class="editor-title">
+
+                            <div class="editor-number">
+                                01
+                            </div>
+
+                            <div>
+
+                                <h3>
+                                    Certificate Details
+                                </h3>
+
+                                <p>
+                                    Enter the information shown
+                                    on the certificate.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="form-grid">
+
+
+                            <div class="form-group">
+
+                                <label>
+                                    Recipient Name
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="recipientName"
+                                    placeholder="e.g. Rahul Patil">
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label>
+                                    Achievement
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="achievement"
+                                    placeholder="e.g. Web Development">
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label>
+                                    Organization
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="organization"
+                                    placeholder="e.g. Walchand College of Engineering">
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label>
+                                    Date
+                                </label>
+
+                                <input
+                                    type="date"
+                                    id="certificateDate">
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label>
+                                    Certificate ID
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="certificateId"
+                                    placeholder="CERT-2026-001">
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label>
+                                    Signatory
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="signatory"
+                                    placeholder="e.g. Dr. Principal">
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- CONTENT -->
+
+                    <div class="editor-section">
+
+                        <div class="editor-title">
+
+                            <div class="editor-number">
+                                02
+                            </div>
+
+                            <div>
+
+                                <h3>
+                                    Certificate Content
+                                </h3>
+
+                                <p>
+                                    Customize the certificate text.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label>
+                                Certificate Title
+                            </label>
+
+                            <input
+                                type="text"
+                                id="certificateTitle"
+                                value="CERTIFICATE OF ACHIEVEMENT">
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label>
+                                Description
+                            </label>
+
+                            <textarea
+                                id="certificateMessage"
+                                rows="3">This certificate is proudly presented in recognition of outstanding achievement and dedication.</textarea>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- TEMPLATE -->
+
+                    <div class="editor-section">
+
+                        <div class="editor-title">
+
+                            <div class="editor-number">
+                                03
+                            </div>
+
+                            <div>
+
+                                <h3>
+                                    Choose Template
+                                </h3>
+
+                                <p>
+                                    Select a visual style.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="template-selector">
+
+
+                            <button
+                                class="template-option active"
+                                data-template="classic">
+
+                                <div
+                                    class="selector-preview classic-selector">
+                                </div>
+
+                                <span>
+                                    Classic
+                                </span>
+
+                            </button>
+
+
+                            <button
+                                class="template-option"
+                                data-template="modern">
+
+                                <div
+                                    class="selector-preview modern-selector">
+                                </div>
+
+                                <span>
+                                    Modern
+                                </span>
+
+                            </button>
+
+
+                            <button
+                                class="template-option"
+                                data-template="elegant">
+
+                                <div
+                                    class="selector-preview elegant-selector">
+                                </div>
+
+                                <span>
+                                    Elegant
+                                </span>
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- BRANDING -->
+
+                    <div class="editor-section">
+
+                        <div class="editor-title">
+
+                            <div class="editor-number">
+                                04
+                            </div>
+
+                            <div>
+
+                                <h3>
+                                    Branding
+                                </h3>
+
+                                <p>
+                                    Add your organization logo
+                                    and signature.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="upload-grid">
+
+
+                            <div class="upload-box">
+
+                                <input
+                                    type="file"
+                                    id="logoInput"
+                                    accept="image/*"
+                                    hidden>
+
+                                <button
+                                    class="upload-btn"
+                                    data-input="logoInput">
+
+                                    ＋ Upload Logo
+
+                                </button>
+
+                                <span id="logoName">
+                                    No logo selected
+                                </span>
+
+                                <button
+                                    class="remove-upload"
+                                    id="removeLogo">
+
+                                    Remove
+
+                                </button>
+
+                            </div>
+
+
+                            <div class="upload-box">
+
+                                <input
+                                    type="file"
+                                    id="signatureInput"
+                                    accept="image/*"
+                                    hidden>
+
+                                <button
+                                    class="upload-btn"
+                                    data-input="signatureInput">
+
+                                    ＋ Upload Signature
+
+                                </button>
+
+                                <span id="signatureName">
+                                    No signature selected
+                                </span>
+
+                                <button
+                                    class="remove-upload"
+                                    id="removeSignature">
+
+                                    Remove
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- CUSTOMIZATION -->
+
+                    <div class="editor-section">
+
+                        <div class="editor-title">
+
+                            <div class="editor-number">
+                                05
+                            </div>
+
+                            <div>
+
+                                <h3>
+                                    Customization
+                                </h3>
+
+                                <p>
+                                    Fine-tune colors and appearance.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="custom-grid">
+
+                            <label>
+                                Accent Color
+
+                                <input
+                                    type="color"
+                                    id="accentColor"
+                                    value="#6d5dfc">
+
+                            </label>
+
+
+                            <label>
+                                Text Color
+
+                                <input
+                                    type="color"
+                                    id="textColor"
+                                    value="#172033">
+
+                            </label>
+
+
+                            <label>
+                                Border
+
+                                <select id="borderStyle">
+
+                                    <option value="double">
+                                        Double
+                                    </option>
+
+                                    <option value="solid">
+                                        Solid
+                                    </option>
+
+                                    <option value="none">
+                                        None
+                                    </option>
+
+                                </select>
+
+                            </label>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- ================= PREVIEW ================= -->
+
+                <div class="preview-panel">
+
+                    <div class="preview-heading">
+
+                        <div>
+
+                            <span>
+                                LIVE PREVIEW
+                            </span>
+
+                            <h2>
+                                Your Certificate
+                            </h2>
+
+                        </div>
+
+                        <button
+                            class="icon-btn"
+                            id="fullscreenPreview">
+
+                            ⛶
+
+                        </button>
+
+                    </div>
+
+
+                    <div
+                        class="certificate-stage"
+                        id="certificateStage">
+
+
+                        <div
+                            class="certificate classic"
+                            id="certificate">
+
+
+                            <img
+                                class="cert-logo hidden"
+                                id="certLogo"
+                                alt="Logo">
+
+
+                            <div class="cert-top">
+                                CERTIFICATE
+                            </div>
+
+
+                            <div
+                                class="cert-title"
+                                id="previewTitle">
+
+                                OF ACHIEVEMENT
+
+                            </div>
+
+
+                            <div class="cert-line"></div>
+
+
+                            <div
+                                class="cert-intro"
+                                id="previewMessage">
+
+                                This certificate is proudly
+                                presented in recognition of
+                                outstanding achievement
+                                and dedication.
+
+                            </div>
+
+
+                            <div
+                                class="cert-recipient"
+                                id="previewRecipient">
+
+                                Your Name
+
+                            </div>
+
+
+                            <div class="cert-achievement">
+
+                                For
+
+                                <strong id="previewAchievement">
+                                    Outstanding Achievement
+                                </strong>
+
+                            </div>
+
+
+                            <div
+                                class="cert-org"
+                                id="previewOrganization">
+
+                                Your Organization
+
+                            </div>
+
+
+                            <div class="cert-bottom">
+
+
+                                <div class="signature-block">
+
+                                    <img
+                                        class="cert-signature hidden"
+                                        id="certSignature"
+                                        alt="Signature">
+
+                                    <div class="sign-line"></div>
+
+                                    <strong
+                                        id="previewSignatory">
+
+                                        Authorized Signatory
+
+                                    </strong>
+
+                                    <span>
+                                        Signature
+                                    </span>
+
+                                </div>
+
+
+                                <div class="date-block">
+
+                                    <strong id="previewDate">
+                                        24 September 2026
+                                    </strong>
+
+                                    <span>
+                                        Date
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+
+                            <div
+                                class="cert-id"
+                                id="previewId">
+
+                                CERT-2026-001
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= TEMPLATES ================= -->
+
+        <section
+            id="templatesScreen"
+            class="placeholder-screen hidden">
+
+            <button
+                class="back-btn"
+                data-dashboard>
+
+                ← Dashboard
+
+            </button>
+
+            <h1>
+                Templates
+            </h1>
+
+            <p>
+                Choose a template to start designing.
+            </p>
+
+            <div
+                class="template-grid"
+                id="templateGallery">
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= CERTIFICATES ================= -->
+
+        <section
+            id="certificatesScreen"
+            class="placeholder-screen hidden">
+
+            <button
+                class="back-btn"
+                data-dashboard>
+
+                ← Dashboard
+
+            </button>
+
+            <h1>
+                My Certificates
+            </h1>
+
+            <p>
+                Your locally saved generated certificates.
+            </p>
+
+            <div
+                id="certificateCards"
+                class="certificate-cards">
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= SETTINGS ================= -->
+
+        <section
+            id="settingsScreen"
+            class="placeholder-screen hidden">
+
+            <button
+                class="back-btn"
+                data-dashboard>
+
+                ← Dashboard
+
+            </button>
+
+            <h1>
+                Settings
+            </h1>
+
+            <p>
+                Certificate Studio stores drafts in your browser.
+            </p>
+
+            <div class="settings-card">
+
+                <h3>
+                    Local storage
+                </h3>
+
+                <p>
+                    Your saved drafts and certificate history
+                    stay on this device/browser.
+                </p>
+
+                <button
+                    class="secondary-btn"
+                    id="resetApp">
+
+                    Reset application data
+
+                </button>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= HELP ================= -->
+
+        <section
+            id="helpScreen"
+            class="placeholder-screen hidden">
+
+            <button
+                class="back-btn"
+                data-dashboard>
+
+                ← Dashboard
+
+            </button>
+
+            <h1>
+                Help
+            </h1>
+
+            <p>
+                Learn how to create your certificate.
+            </p>
+
+            <div class="settings-card">
+
+                <h3>
+                    Quick Guide
+                </h3>
+
+                <ol>
+
+                    <li>
+                        Enter recipient and achievement details.
+                    </li>
+
+                    <li>
+                        Choose Classic, Modern or Elegant.
+                    </li>
+
+                    <li>
+                        Upload logo/signature if required.
+                    </li>
+
+                    <li>
+                        Click Generate Certificate.
+                    </li>
+
+                    <li>
+                        Save the certificate as PDF.
+                    </li>
+
+                </ol>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+
+<div
+    id="toast"
+    class="toast">
+</div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+
+<script src="script.js"></script>
+
+</body>
+</html>
